@@ -4,33 +4,62 @@ using UnityEngine;
 
 public class PlayerRigbyController : MonoBehaviour
 {
-    private Animator playerAnim;
 
-    public float velocidad = 5.0f;
+    public float velocidadMovimiento = 5.0f;
+    public float velocidadRotacion = 200.0f;
+    private Animator playerAnim;
+    public float x, y;
+
+    public Rigidbody rb;
+    public float fuerzaSalto = 8f;
+    public bool puedoSaltar;
+
     // Start is called before the first frame update
     void Start()
     {
-        playerAnim = GetComponent<Animator>();
+        puedoSaltar = false;
+        playerAnim = gameObject.GetComponent<Animator>();
+    }
+
+    void FixedUpdate()
+    {
+        transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento);
+        //Ajustando la rotacion
+        transform.Rotate(0, x * Time.deltaTime * velocidadRotacion, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
         // Obtener las entradas del teclado
-        float movimientoHorizontal = Input.GetAxis("Horizontal");
-        float movimientoVertical = Input.GetAxis("Vertical");
+        x = Input.GetAxis("Horizontal");
+        y = Input.GetAxis("Vertical");
 
-        //if (Input.GetKeyDown(KeyCode))
-        //{
-            //Agregando la animacion de saltar.
-          //playerAnim.SetTrigger("Jump_trig");
-        //}
 
-        // Calcular el vector de movimiento
-        Vector3 movimiento = new Vector3(movimientoHorizontal, 0, movimientoVertical) * velocidad;
+        playerAnim.SetFloat("VelX", x);
+        playerAnim.SetFloat("VelY", y);
 
-        // Aplicar el movimiento al personaje
-        transform.Translate(movimiento * Time.deltaTime);
+        if (puedoSaltar)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                playerAnim.SetBool("salte", true);
+                rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+            }
+            playerAnim.SetBool("tocoSuelo", true);
 
+        }
+        else
+        {
+            estoyCayendo();
+        }
+
+
+    }
+
+    public void estoyCayendo()
+    {
+        playerAnim.SetBool("tocoSuelo", false);
+        playerAnim.SetBool("salte", false);
     }
 }
