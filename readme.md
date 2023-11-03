@@ -30,18 +30,21 @@ Destructor de mundos (Bolas de Fuego)
 Default de la serie 
 
 ## Proyecto de Juego Básico en Unity - Unidad 2
-Código fuente y readme [Practica 2](https://github.com/JulioJohan/AventurasMexicanas/tree/main/Lecci%C3%B3n%202%20Basic%20GamePlay)
-
+- Código fuente y readme [Practica 2](https://github.com/JulioJohan/AventurasMexicanas/tree/main/Lecci%C3%B3n%202%20Basic%20GamePlay)
+- Desafio [Video](https://drive.google.com/file/d/1UNx4tGB9dsWdXCXS7x30FqwJ6ABfBT4z/view?usp=sharing)
 
 ## Trello
-Tablero [Aqui](https://trello.com/invite/b/Ok4L7T91/ATTI7d1aba406455b2035020247b6df8b633E72E987D/sprint-0-animaciones-de-los-personajes)
+- Tablero [Aqui](https://trello.com/invite/b/Ok4L7T91/ATTI7d1aba406455b2035020247b6df8b633E72E987D/sprint-0-animaciones-de-los-personajes)
 
 ## Proyecto de Sonido y efectos - Unidad 3
-Código fuente y readme [Practica 3](https://github.com/JulioJohan/AventurasMexicanas/tree/development/Lecci%C3%B3n%203%20Sound%20and%20Efffects)
+- Código fuente y readme [Practica 3](https://github.com/JulioJohan/AventurasMexicanas/tree/development/Lecci%C3%B3n%203%20Sound%20and%20Efffects)
+- Desafio [Video](https://drive.google.com/file/d/1enr9l6jo4uO05N2u84ZBJVrUW55dNFG9/view?usp=share_link)
 
 ## Unidad 4- Unity
-Código fuente y readme [Practica 4](https://github.com/JulioJohan/AventurasMexicanas/tree/main/Lecci%C3%B3n%204%20GamePlay%20Mechanics)
+- Código fuente y readme [Practica 4](https://github.com/JulioJohan/AventurasMexicanas/tree/main/Lecci%C3%B3n%204%20GamePlay%20Mechanics)
+- Desafio [Video](https://drive.google.com/drive/folders/11d9p3senxgmExFIflJvdNRYO5JAIJCls?usp=share_link)
 
 ## Unidad 5- Unity
-Código fuente y readme [Practica 5](https://github.com/JulioJohan/AventurasMexicanas/tree/main/Lecci%C3%B3n%205%20User%20Interface)
+- Código fuente y readme [Practica 5](https://github.com/JulioJohan/AventurasMexicanas/tree/main/Lecci%C3%B3n%205%20User%20Interface)
+- Desafio [Video](https://drive.google.com/file/d/1P94ZAQyizSTLHFwRmFbRz9c1QrNRrKsq/view?usp=sharing)
 
