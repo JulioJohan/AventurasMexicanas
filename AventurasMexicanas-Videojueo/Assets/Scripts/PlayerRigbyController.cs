@@ -14,11 +14,15 @@ public class PlayerRigbyController : MonoBehaviour
     public float fuerzaSalto = 8f;
     public bool puedoSaltar;
 
+    //Variable para la animacion de bailar.
+    private float tiempoInactivo;
+
     // Start is called before the first frame update
     void Start()
     {
         puedoSaltar = false;
         playerAnim = gameObject.GetComponent<Animator>();
+        tiempoInactivo = 0f;
     }
 
     void FixedUpdate()
@@ -35,6 +39,18 @@ public class PlayerRigbyController : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
+        //Aplicando animacion.
+        // Si el personaje está en movimiento
+        if (x != 0 || y != 0)
+        {
+            tiempoInactivo = 0f; // Restablecer el tiempo de inactividad
+            playerAnim.SetFloat("tiempoInactivo", tiempoInactivo);
+        }
+        else
+        {
+            tiempoInactivo += Time.deltaTime; // Incrementar el tiempo de inactividad
+            playerAnim.SetFloat("tiempoInactivo", tiempoInactivo);
+        }
 
         playerAnim.SetFloat("VelX", x);
         playerAnim.SetFloat("VelY", y);
