@@ -19,3 +19,6 @@ Este proyecto fue desarrollado utilizando Unity versión 2022.3.8.
 
 ## Referencias
 Este proyecto se basa en el curso 'Unidad 2 - Juego Básico' disponible en Unity Learn
+
+## Desafio
+https://drive.google.com/file/d/1UNx4tGB9dsWdXCXS7x30FqwJ6ABfBT4z/view?usp=sharing
