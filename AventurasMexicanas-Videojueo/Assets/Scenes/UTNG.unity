@@ -493,6 +493,17 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+  - component: {fileID: 381527186}
+  - component: {fileID: 381527188}
+  - component: {fileID: 381527187}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &381527186
   - component: {fileID: 93496770}
   m_Layer: 0
   m_Name: PowerUps
@@ -507,9 +518,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381527185}
+  serializedVersion: 2
+  m_LocalPosition: {x: -86.66561, y: 0, z: -66.222046}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 875368555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!154 &381527187
+TerrainCollider:
   m_GameObject: {fileID: 93496769}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.53019, y: -18.057709, z: 9.901237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -652,8 +672,8 @@ GameObject:
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381527185}
   m_GameObject: {fileID: 165389498}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -663,6 +683,13 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: 4df9e2e671c867d499d632108584fbe3, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &381527188
+Terrain:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
@@ -1067,6 +1094,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381527185}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 4df9e2e671c867d499d632108584fbe3, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
   serializedVersion: 6
   m_Component:
   - component: {fileID: 322598816}
@@ -7791,6 +7851,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: UTNG
       objectReference: {fileID: 0}
+    - target: {fileID: 4934451622567939614, guid: cb61ccb1a1b89b1479714ecdeeb81183, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934451622567939614, guid: cb61ccb1a1b89b1479714ecdeeb81183, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.74342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319149761618303200, guid: cb61ccb1a1b89b1479714ecdeeb81183, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
     - target: {fileID: 4185211950796914650, guid: cb61ccb1a1b89b1479714ecdeeb81183, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.210629
@@ -7952,6 +8023,9 @@ PrefabInstance:
       addedObject: {fileID: 787307806}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: cb61ccb1a1b89b1479714ecdeeb81183, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 381527186}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb61ccb1a1b89b1479714ecdeeb81183, type: 3}
       addedObject: {fileID: 1671284132}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: cb61ccb1a1b89b1479714ecdeeb81183, type: 3}
       insertIndex: -1
