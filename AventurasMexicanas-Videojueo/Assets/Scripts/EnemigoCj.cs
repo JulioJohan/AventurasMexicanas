@@ -79,7 +79,7 @@ public class EnemigoCj : MonoBehaviour
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacion, 360);
                 sonidoEfectoCaminar.Play();
                 transform.Translate(Vector3.forward * 17 * Time.deltaTime);
-                //animacion.SetBool("Caminar", true);
+                animacion.SetBool("Caminar", true);
             }
             else
             {
@@ -108,11 +108,7 @@ public class EnemigoCj : MonoBehaviour
 
     public void OnTriggerEnter(Collider collider)
     {
-        print("Aa");
-        if (collider.CompareTag("manos"))
-        {
-            print("Danio");
-        }
+        print("Aa");        
     }
 
 
