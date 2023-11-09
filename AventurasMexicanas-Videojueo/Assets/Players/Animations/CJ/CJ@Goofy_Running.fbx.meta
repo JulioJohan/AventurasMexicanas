@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: a2693b72bc7f5cb428da89ce2a13bd24
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
+      copied configuration does not match position in animation file:\n\t'mixamorig:CJ_GTASA:LeftUpLeg'
+      : position error = 2.040792 mm\n\t'mixamorig:CJ_GTASA:LeftLeg' : position error
+      = 5.452659 mm\n\t'mixamorig:CJ_GTASA:LeftFoot' : position error = 24.410736
+      mm\n\t'mixamorig:CJ_GTASA:RightUpLeg' : position error = 2.011673 mm\n\t'mixamorig:CJ_GTASA:RightLeg'
+      : position error = 5.358859 mm\n\t'mixamorig:CJ_GTASA:RightFoot' : position
+      error = 24.321424 mm\n"
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Goofy_Running
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: mixamorig:CJ_GTASA:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:CJ_GTASA:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: CJ_Quieto(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CJ_GTASA:Hands
+      parentName: CJ_Quieto(Clone)
+      position: {x: -0, y: 0.010661915, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CJ_GTASA:Head
+      parentName: CJ_Quieto(Clone)
+      position: {x: -0, y: 0.010661915, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CJ_GTASA:Torso
+      parentName: CJ_Quieto(Clone)
+      position: {x: -0, y: 0.010661915, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CJ_GTASA:Feet
+      parentName: CJ_Quieto(Clone)
+      position: {x: -0, y: 0.010661915, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CJ_GTASA:Pants
+      parentName: CJ_Quieto(Clone)
+      position: {x: -0, y: 0.010661915, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:Hips
+      parentName: CJ_Quieto(Clone)
+      position: {x: -0.000012439685, y: 0.010482156, z: -0.00004212622}
+      rotation: {x: 0.000000059604638, y: -0.0000000029103826, z: -7.275959e-10, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: mixamorig:CJ_GTASA:Spine
+      parentName: mixamorig:CJ_GTASA:Hips
+      position: {x: -0, y: 0.0010497213, z: -0.00007233075}
+      rotation: {x: -0.034391124, y: 0.000000005818495, z: 1.660969e-10, w: 0.9994085}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:Spine1
+      parentName: mixamorig:CJ_GTASA:Spine
+      position: {x: -0, y: 0.0012275814, z: 6.4607873e-13}
+      rotation: {x: -0.000000119209275, y: -1.4848565e-11, z: 2.1549391e-10, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: mixamorig:CJ_GTASA:Spine2
+      parentName: mixamorig:CJ_GTASA:Spine1
+      position: {x: -0, y: 0.0014029465, z: -2.855639e-12}
+      rotation: {x: 0.0000000074505797, y: -0.0000000026721725, z: -0.0000000035572345, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: mixamorig:CJ_GTASA:Neck
+      parentName: mixamorig:CJ_GTASA:Spine2
+      position: {x: -0, y: 0.0015783166, z: 1.6404973e-10}
+      rotation: {x: 0.034391228, y: -0.000000003205808, z: 0.000000008534996, w: 0.9994085}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: mixamorig:CJ_GTASA:Head
+      parentName: mixamorig:CJ_GTASA:Neck
+      position: {x: -0, y: 0.0010973811, z: 0.00030269375}
+      rotation: {x: -0, y: 0.0000000029103822, z: -0.0000000032741798, w: 1}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.99999994}
+    - name: mixamorig:CJ_GTASA:HeadTop_End
+      parentName: mixamorig:CJ_GTASA:Head
+      position: {x: -0, y: 0.0014538824, z: 0.0004010286}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:RightShoulder
+      parentName: mixamorig:CJ_GTASA:Spine2
+      position: {x: 0.0006628772, y: 0.0013060565, z: -0.00003175267}
+      rotation: {x: -0.5621597, y: -0.41975594, z: 0.58712107, w: -0.40381956}
+      scale: {x: 1.0000004, y: 1.0000008, z: 1.0000005}
+    - name: mixamorig:CJ_GTASA:RightArm
+      parentName: mixamorig:CJ_GTASA:RightShoulder
+      position: {x: -1.6667724e-12, y: 0.0014496992, z: -1.2149972e-11}
+      rotation: {x: -0.14270484, y: -0.07265053, z: 0.027955826, w: 0.9866994}
+      scale: {x: 1, y: 1.0000004, z: 1.000001}
+    - name: mixamorig:CJ_GTASA:RightForeArm
+      parentName: mixamorig:CJ_GTASA:RightArm
+      position: {x: -2.4278881e-11, y: 0.0024630034, z: -9.065454e-12}
+      rotation: {x: -0.0056345463, y: 0.00008299574, z: -0.014731461, w: 0.99987566}
+      scale: {x: 1.0000008, y: 1.0000012, z: 1.0000004}
+    - name: mixamorig:CJ_GTASA:RightHand
+      parentName: mixamorig:CJ_GTASA:RightForeArm
+      position: {x: -8.050502e-12, y: 0.0030783725, z: -2.5168466e-11}
+      rotation: {x: 0.12513171, y: -0.41824165, z: 0.042533137, w: -0.8986695}
+      scale: {x: 0.99999946, y: 1.0000001, z: 1.0000006}
+    - name: mixamorig:CJ_GTASA:RightHandIndex1
+      parentName: mixamorig:CJ_GTASA:RightHand
+      position: {x: 1.256417e-11, y: 0.00025905613, z: 0.000028380318}
+      rotation: {x: 0.12035842, y: 0.023073494, z: 0.18685766, w: 0.97471315}
+      scale: {x: 1.0000004, y: 1.0000011, z: 1.000001}
+    - name: mixamorig:CJ_GTASA:RightHandIndex2
+      parentName: mixamorig:CJ_GTASA:RightHandIndex1
+      position: {x: 0.00008747775, y: 0.00040748777, z: -4.4928614e-12}
+      rotation: {x: 0.028003749, y: 0.009956011, z: -0.08179951, w: 0.99620557}
+      scale: {x: 1.0000002, y: 1.0000012, z: 1.0000012}
+    - name: mixamorig:CJ_GTASA:RightHandIndex3
+      parentName: mixamorig:CJ_GTASA:RightHandIndex2
+      position: {x: 0.00000030955852, y: 0.0004363267, z: 2.511239e-12}
+      rotation: {x: 0.028078739, y: -0.009979003, z: -0.08207669, w: 0.9961805}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+    - name: mixamorig:CJ_GTASA:RightHandIndex4
+      parentName: mixamorig:CJ_GTASA:RightHandIndex3
+      position: {x: -0.00008778727, y: 0.00041141766, z: 1.7644591e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:RightHandThumb1
+      parentName: mixamorig:CJ_GTASA:RightHand
+      position: {x: -0.0002583003, y: 0.00010543322, z: -8.173989e-12}
+      rotation: {x: -0.08030922, y: -0.086479224, z: 0.23312795, w: 0.9652581}
+      scale: {x: 0.99999994, y: 1.0000012, z: 1.0000006}
+    - name: mixamorig:CJ_GTASA:RightHandThumb2
+      parentName: mixamorig:CJ_GTASA:RightHandThumb1
+      position: {x: -0.00009938407, y: 0.000199843, z: -5.5112915e-12}
+      rotation: {x: 0.013496426, y: -0.01900423, z: 0.28465238, w: 0.9583474}
+      scale: {x: 1, y: 1.0000011, z: 1.0000007}
+    - name: mixamorig:CJ_GTASA:RightHandThumb3
+      parentName: mixamorig:CJ_GTASA:RightHandThumb2
+      position: {x: 0.00005102398, y: 0.0003064279, z: -9.975069e-12}
+      rotation: {x: 0.042034164, y: 0.00000014883216, z: -0.000000051829957, w: 0.99911624}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: mixamorig:CJ_GTASA:RightHandThumb4
+      parentName: mixamorig:CJ_GTASA:RightHandThumb3
+      position: {x: 0.000048360107, y: 0.00029682755, z: 4.13068e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:LeftShoulder
+      parentName: mixamorig:CJ_GTASA:Spine2
+      position: {x: -0.0006628772, y: 0.0013042744, z: -0.00000588984}
+      rotation: {x: 0.5732866, y: -0.41217673, z: 0.57725525, w: 0.41015762}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: mixamorig:CJ_GTASA:LeftArm
+      parentName: mixamorig:CJ_GTASA:LeftShoulder
+      position: {x: -5.9027224e-13, y: 0.0014496992, z: -1.2312477e-11}
+      rotation: {x: -0.14455748, y: 0.025299773, z: -0.012239337, w: 0.98909724}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
+    - name: mixamorig:CJ_GTASA:LeftForeArm
+      parentName: mixamorig:CJ_GTASA:LeftArm
+      position: {x: -1.0355485e-11, y: 0.00245583, z: 2.2408242e-11}
+      rotation: {x: -0.0025723279, y: 0.000015659258, z: -0.006076533, w: 0.9999783}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000001}
+    - name: mixamorig:CJ_GTASA:LeftHand
+      parentName: mixamorig:CJ_GTASA:LeftForeArm
+      position: {x: 8.45899e-12, y: 0.0030815238, z: -7.0557005e-11}
+      rotation: {x: -0.04872839, y: -0.3404021, z: 0.16794237, w: 0.9238763}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000006}
+    - name: mixamorig:CJ_GTASA:LeftHandIndex1
+      parentName: mixamorig:CJ_GTASA:LeftHand
+      position: {x: -3.012957e-11, y: 0.00036055504, z: 0.0000005839758}
+      rotation: {x: -0.043358374, y: 0.012137739, z: -0.2693023, w: 0.96200264}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000001}
+    - name: mixamorig:CJ_GTASA:LeftHandIndex2
+      parentName: mixamorig:CJ_GTASA:LeftHandIndex1
+      position: {x: -0.00015193269, y: 0.0005148006, z: -1.2049366e-11}
+      rotation: {x: 0.015599076, y: 0.003306092, z: 0.28024563, w: 0.95979595}
+      scale: {x: 1, y: 1.0000007, z: 1.0000006}
+    - name: mixamorig:CJ_GTASA:LeftHandIndex3
+      parentName: mixamorig:CJ_GTASA:LeftHandIndex2
+      position: {x: 0.00010538347, y: 0.00033799998, z: -4.4829127e-12}
+      rotation: {x: -0.03418845, y: -0.020494815, z: -0.06966511, w: 0.9967738}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.99999994}
+    - name: mixamorig:CJ_GTASA:LeftHandIndex4
+      parentName: mixamorig:CJ_GTASA:LeftHandIndex3
+      position: {x: 0.00004654922, y: 0.00038315056, z: 1.4237228e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:LeftHandThumb1
+      parentName: mixamorig:CJ_GTASA:LeftHand
+      position: {x: 0.0002613718, y: 0.00006602993, z: 6.1929606e-12}
+      rotation: {x: -0.095738895, y: 0.12075129, z: -0.314901, w: 0.9365311}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000001}
+    - name: mixamorig:CJ_GTASA:LeftHandThumb2
+      parentName: mixamorig:CJ_GTASA:LeftHandThumb1
+      position: {x: 0.00009911386, y: 0.00019154245, z: -2.393452e-13}
+      rotation: {x: 0.0059337355, y: 0.007982771, z: -0.27168304, w: 0.9623354}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000008}
+    - name: mixamorig:CJ_GTASA:LeftHandThumb3
+      parentName: mixamorig:CJ_GTASA:LeftHandThumb2
+      position: {x: -0.000039641443, y: 0.00030786742, z: -1.1386889e-11}
+      rotation: {x: 0.034181096, y: -0.004642928, z: -0.018928966, w: 0.99922556}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: mixamorig:CJ_GTASA:LeftHandThumb4
+      parentName: mixamorig:CJ_GTASA:LeftHandThumb3
+      position: {x: -0.000059472422, y: 0.00027723695, z: -1.6098001e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:LeftUpLeg
+      parentName: mixamorig:CJ_GTASA:Hips
+      position: {x: -0.0009449312, y: -0.0005833179, z: 0.000027763117}
+      rotation: {x: 0.00086242374, y: -0.021232164, z: 0.9989505, w: 0.040575814}
+      scale: {x: 1.0000004, y: 1, z: 0.99999994}
+    - name: mixamorig:CJ_GTASA:LeftLeg
+      parentName: mixamorig:CJ_GTASA:LeftUpLeg
+      position: {x: 5.094358e-13, y: 0.0045359684, z: -2.9044094e-12}
+      rotation: {x: 0.015418972, y: -0.00008330244, z: -0.0054030097, w: 0.99986655}
+      scale: {x: 1.0000004, y: 1.0000005, z: 0.9999999}
+    - name: mixamorig:CJ_GTASA:LeftFoot
+      parentName: mixamorig:CJ_GTASA:LeftLeg
+      position: {x: 2.6907387e-12, y: 0.0042239944, z: -2.2479679e-12}
+      rotation: {x: 0.52353114, y: -0.08442704, z: 0.05223358, w: 0.8462027}
+      scale: {x: 1.0000007, y: 1.0000006, z: 1.0000002}
+    - name: mixamorig:CJ_GTASA:LeftToeBase
+      parentName: mixamorig:CJ_GTASA:LeftFoot
+      position: {x: 2.3076452e-11, y: 0.0018357357, z: 2.6009124e-11}
+      rotation: {x: 0.20822813, y: 0.2532549, z: -0.05591836, w: 0.9430674}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.9999998}
+    - name: mixamorig:CJ_GTASA:LeftToe_End
+      parentName: mixamorig:CJ_GTASA:LeftToeBase
+      position: {x: 7.7799627e-13, y: 0.0008136881, z: -4.845453e-13}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:CJ_GTASA:RightUpLeg
+      parentName: mixamorig:CJ_GTASA:Hips
+      position: {x: 0.0009449312, y: -0.0005833179, z: 0.00002678873}
+      rotation: {x: -0.00080432836, y: -0.019799491, z: 0.99897975, w: -0.040581778}
+      scale: {x: 1.0000006, y: 1.0000006, z: 0.99999994}
+    - name: mixamorig:CJ_GTASA:RightLeg
+      parentName: mixamorig:CJ_GTASA:RightUpLeg
+      position: {x: -3.843454e-12, y: 0.0045354376, z: 2.1112704e-12}
+      rotation: {x: 0.017673543, y: 0.000095593685, z: 0.0054075373, w: 0.9998293}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1.0000001}
+    - name: mixamorig:CJ_GTASA:RightFoot
+      parentName: mixamorig:CJ_GTASA:RightLeg
+      position: {x: 7.866047e-12, y: 0.0042237486, z: -5.410861e-13}
+      rotation: {x: 0.5128747, y: 0.089260906, z: -0.053724524, w: 0.8521183}
+      scale: {x: 1.0000002, y: 1.0000005, z: 0.9999998}
+    - name: mixamorig:CJ_GTASA:RightToeBase
+      parentName: mixamorig:CJ_GTASA:RightFoot
+      position: {x: -2.6908595e-11, y: 0.0017761987, z: 6.95447e-11}
+      rotation: {x: 0.21678224, y: -0.25395578, z: 0.058517955, w: 0.9407909}
+      scale: {x: 1.0000004, y: 1.0000011, z: 0.9999996}
+    - name: mixamorig:CJ_GTASA:RightToe_End
+      parentName: mixamorig:CJ_GTASA:RightToeBase
+      position: {x: -2.2119591e-12, y: 0.00080768723, z: -3.073593e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ae7e5f3f25c95094196974b69aa376e2, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
