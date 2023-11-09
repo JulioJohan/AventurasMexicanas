@@ -34,3 +34,6 @@
 .vscode/
 .history/
 .vscode/
+
+# Ignora la carpeta UserSettings
+/UserSettings/
