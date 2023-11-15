@@ -8,6 +8,8 @@ public class EnemigoKrilin : MonoBehaviour
     //Logica para animar el enemigo.
     public int rutina;
     public float cronometro;
+    public float cronometro2;
+
     public Animator ani;
     public Quaternion angulo;
     public float grado;
@@ -16,7 +18,8 @@ public class EnemigoKrilin : MonoBehaviour
 
     public GameObject personajePrincipal;
 
-
+    //Poder
+    public GameObject projectilePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,7 +71,7 @@ public class EnemigoKrilin : MonoBehaviour
         else
         {
 
-            if (Vector3.Distance(transform.position, personajePrincipal.transform.position) > 1 && !atacar)
+            if (Vector3.Distance(transform.position, personajePrincipal.transform.position) > 2 && !atacar)
             {
                 var buscarPosicion = personajePrincipal.transform.position - transform.position;
                 buscarPosicion.y = 0;
@@ -94,6 +97,14 @@ public class EnemigoKrilin : MonoBehaviour
 
                 ani.SetBool("Golpear", true);
                 atacar = true;
+
+                cronometro2 += 1 * Time.deltaTime;
+                if (cronometro2 >= 1)
+                {
+                    Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+                    cronometro2 = 0;
+                }
+
             }
 
 
