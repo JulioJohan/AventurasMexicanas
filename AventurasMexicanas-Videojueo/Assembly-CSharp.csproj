@@ -61,21 +61,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
+    <Compile Include="Assets\Scripts\LogicaPersonajePrincipal.cs" />
     <Compile Include="Assets\Scripts\PlayerRigbyController.cs" />
+    <Compile Include="Assets\ZombiSoft\TinyHealthSystem\Demo\PopupText.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserManager.cs" />
+    <Compile Include="Assets\Scripts\Armas\ActivarArmas.cs" />
+    <Compile Include="Assets\Scripts\MenuFinDelJuego.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabExporter.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabModelWindow.cs" />
-    <Compile Include="Assets\Scripts\LogicaPersonaje.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserWindow.cs" />
+    <Compile Include="Assets\Scripts\Armas\SincronizarEspada.cs" />
+    <Compile Include="Assets\Scripts\Armas\TomarArma.cs" />
     <Compile Include="Assets\Scripts\GeneraPasto.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\Resizer.cs" />
     <Compile Include="Assets\Scripts\LogicaPies.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporter.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
+    <Compile Include="Assets\ZombiSoft\TinyHealthSystem\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\GirarPiano.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabApi.cs" />
+    <Compile Include="Assets\Scripts\LogicaBarraVidaPersonajePrincipal.cs" />
     <Compile Include="Assets\Scripts\EnemigoCj.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabPlugin.cs" />
+    <Compile Include="Assets\Scripts\SeguirCamara.cs" />
+    <Compile Include="Assets\ZombiSoft\TinyHealthSystem\Demo\Demo.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporterWindow.cs" />
   </ItemGroup>
   <ItemGroup>
