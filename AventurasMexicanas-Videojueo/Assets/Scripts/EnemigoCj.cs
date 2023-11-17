@@ -42,6 +42,10 @@ public class EnemigoCj : MonoBehaviour
 
     private void comportamientoEnemigo()
     {
+        if(personajePrincipal == null)
+        {
+            return;
+        }
         if (Vector3.Distance(transform.position, personajePrincipal.transform.position) > 10)
         {
             cronometro += 1 * Time.deltaTime;
@@ -61,6 +65,7 @@ public class EnemigoCj : MonoBehaviour
                     angulo = Quaternion.Euler(0, grado, 0);
                     break;
                 case 2:
+                    sonidoEfectoCaminar.Stop();
                     sonidoEfectoCaminar.Play();
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
                     transform.Translate(Vector3.forward * 4 * Time.deltaTime);
@@ -77,6 +82,7 @@ public class EnemigoCj : MonoBehaviour
                 buscarPosicion.y = 0;
                 var rotacion = Quaternion.LookRotation(buscarPosicion);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacion, 360);
+                sonidoEfectoCaminar.Stop();
                 sonidoEfectoCaminar.Play();
                 transform.Translate(Vector3.forward * 17 * Time.deltaTime);
                 animacion.SetBool("Caminar", true);
@@ -105,12 +111,6 @@ public class EnemigoCj : MonoBehaviour
         atacar = false;
 
     }
-
-    public void OnTriggerEnter(Collider collider)
-    {
-        print("Aa");        
-    }
-
-
+  
 
 }
