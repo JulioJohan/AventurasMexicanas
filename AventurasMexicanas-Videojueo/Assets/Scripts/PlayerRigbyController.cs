@@ -90,4 +90,16 @@ public class PlayerRigbyController : MonoBehaviour
         playerAnim.SetBool("tocoSuelo", false);
         playerAnim.SetBool("salte", false);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("poder"))
+        {
+            print("recibiendo daño");
+        }
+        if (other.CompareTag("vida"))
+        {
+            print("Sumando vida");
+        }
+    }
 }
