@@ -23,10 +23,10 @@ public class MenuController : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadLevel1()
+    public void CargarNivel(string nivel)
     {
         //Se usa para cargar una esena, se le pasa el nombre de la imagen
-        SceneManager.LoadScene("UTNG");
+        SceneManager.LoadScene(nivel);
     }
 
 }
