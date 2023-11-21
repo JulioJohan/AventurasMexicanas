@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.113407
+      value: -120.73042
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -86.613464
+      value: -0.40425587
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: The Power (Regular Show)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
+      propertyPath: m_TagString
+      value: vida
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5577030104081144024, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
@@ -77,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7717856677130691118}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7353447795075710336}
   m_SourcePrefab: {fileID: 100100000, guid: 6681b2b1570d3bb4c9c9f36b38e0f18a, type: 3}
 --- !u!1 &1809671950029982842 stripped
 GameObject:
@@ -98,3 +105,25 @@ MonoBehaviour:
   velocidadDeRotacion: 50
   amplitud: 0.5
   velocidadDeFlotacion: 1
+  logicaBarraVidaPersonajePrincipal: {fileID: 0}
+--- !u!65 &7353447795075710336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809671950029982842}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.532107, y: 4.8897066, z: 7.540978}
+  m_Center: {x: -5.3025994, y: -1.2254081, z: -0.16399813}

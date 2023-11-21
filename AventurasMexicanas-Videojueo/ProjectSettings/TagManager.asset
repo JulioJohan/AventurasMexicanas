@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mordecai
+  - PunosCJ
+  - Banqueta
+  - poder
+  - vida
+  - rigby
+  - poderKrilin
+  - CJ
+  - DestructorMundos
+  - IconoPuntos
   layers:
   - Default
   - TransparentFX
