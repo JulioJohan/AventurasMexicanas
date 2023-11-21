@@ -63,6 +63,7 @@ public class LogicaPersonajePrincipal : MonoBehaviour
     {
 
         movimientoPersonaje();
+        checarFueraJugador();
         //verificarJugando();
         golpe();
     }
@@ -135,7 +136,7 @@ public class LogicaPersonajePrincipal : MonoBehaviour
         transform.Rotate(0, horizontal * Time.deltaTime * velocidadRotacion, 0);
         transform.Translate(0, 0, vertical * Time.deltaTime * velocidadMovimiento);
         animator.SetFloat("velocidadHorizontal", horizontal);
-        animator.SetFloat("velocidadVertical", vertical);
+        animator.SetFloat("velocidadVertical", vertical);       
     }
 
     public void dejoGolpear()
@@ -153,5 +154,16 @@ public class LogicaPersonajePrincipal : MonoBehaviour
     public void dejoDeAvanzar() 
     {
         avanzoSolo = false;
+    }
+
+    private void checarFueraJugador()
+    {
+        if (gameObject.transform.position.y <= -5)
+        {
+            finDelJuegoCanvas.SetActive(true);
+            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos);
+            transform.position = new Vector3(0, 0, 0);
+
+        }
     }
 }
