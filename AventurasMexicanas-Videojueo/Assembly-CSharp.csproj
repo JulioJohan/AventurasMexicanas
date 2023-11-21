@@ -511,8 +511,24 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>Assets\BaseDatos\Plugins\MongoDB.Driver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DnsClient">
+      <HintPath>Assets\BaseDatos\Plugins\DnsClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="SketchfabPlugin">
       <HintPath>Assets\Sketchfab For Unity\Dependencies\Libraries\SketchfabPlugin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>Assets\BaseDatos\Plugins\MongoDB.Bson.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>Assets\BaseDatos\Plugins\MongoDB.Driver.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Ionic.Zip.Unity">
@@ -521,22 +537,6 @@
     </Reference>
     <Reference Include="GLTFSerialization">
       <HintPath>Assets\Sketchfab For Unity\Dependencies\Libraries\GLTFSerialization.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MongoDB.Driver.Core">
-      <HintPath>Assets\BaseDatos\Plugins\MongoDB.Driver.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MongoDB.Driver">
-      <HintPath>Assets\BaseDatos\Plugins\MongoDB.Driver.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>Assets\BaseDatos\Plugins\MongoDB.Bson.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DnsClient">
-      <HintPath>Assets\BaseDatos\Plugins\DnsClient.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
