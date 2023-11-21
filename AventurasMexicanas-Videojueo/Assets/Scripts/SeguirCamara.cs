@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LogicaBarria : MonoBehaviour
 {
     // Start is called before the first frame update
+
     void Start()
     {
         
@@ -13,11 +15,13 @@ public class LogicaBarria : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Camera.main != null)
+        if (Camera.main != null)
         {            
             transform.forward = Camera.main.transform.forward;
 
         }
+
+
 
     }
 }

@@ -10,6 +10,10 @@ public class GirarPiano : MonoBehaviour
 
     private Vector3 posicionInicial;
 
+    //Aumentar la vida
+    public LogicaBarraVidaPersonajePrincipal logicaBarraVidaPersonajePrincipal;
+
+
     void Start()
     {
         // Guardar la posición inicial
@@ -17,6 +21,9 @@ public class GirarPiano : MonoBehaviour
         // Establecer la altura inicial en el eje Y a 2
         posicionInicial.y = 2;
         transform.position = posicionInicial;
+
+        logicaBarraVidaPersonajePrincipal = GameObject.FindObjectOfType<LogicaBarraVidaPersonajePrincipal>();
+
     }
 
     void Update()
@@ -26,5 +33,14 @@ public class GirarPiano : MonoBehaviour
 
         // Mover la moneda arriba y abajo
         transform.position = posicionInicial + Vector3.up * amplitud * Mathf.Sin(Time.time * velocidadDeFlotacion);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            logicaBarraVidaPersonajePrincipal.vidaActual += 20;
+            Destroy(gameObject);
+        }
     }
 }

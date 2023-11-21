@@ -5,7 +5,7 @@ public class EnemigoCj : MonoBehaviour
 
     //Constantes
     private const string PERSONAJE_PRINCIPAL_OBJECT = "Mordecai";
-
+    public LogicaVidaEnemigoCj logicaVidaEnemigoCj;
 
 
     // Start is called before the first frame update
@@ -21,15 +21,23 @@ public class EnemigoCj : MonoBehaviour
     //Efectos de Sonido   
     public GameObject efectoCaminar;
     private AudioSource sonidoEfectoCaminar;
+    public GameObject efectoGolpe;
+    private AudioSource sonidoEfectoGolpe;
+
     // Start is called before the first frame update
 
     //Buscar personaje principal
     public GameObject personajePrincipal;
+
+    public float vidaPersonaje;
     void Start()
     {
         animacion = GetComponent<Animator>();
         sonidoEfectoCaminar = efectoCaminar.GetComponent<AudioSource>();
-        personajePrincipal = GameObject.Find("Mordecai");
+        sonidoEfectoGolpe = efectoGolpe.GetComponent<AudioSource>();
+        personajePrincipal = GameObject.Find("Player");
+        vidaPersonaje = logicaVidaEnemigoCj.vidaActual;
+
         //animacion = GetComponent<Animator>();       
     }
 
@@ -38,6 +46,26 @@ public class EnemigoCj : MonoBehaviour
     {
 
         comportamientoEnemigo();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            LogicaPersonajePrincipal logicaPersonajePrincipal = other.GetComponent<LogicaPersonajePrincipal>();
+
+            if (logicaPersonajePrincipal.atacando)
+            {
+                float danio = 100.0f;
+                sonidoEfectoGolpe.Pause();
+                sonidoEfectoGolpe.Play();
+                sonidoEfectoGolpe.Pause();
+                logicaVidaEnemigoCj.vidaActual -= danio;
+                vidaPersonaje = logicaVidaEnemigoCj.vidaActual;
+            }
+         
+            
+        }
     }
 
     private void comportamientoEnemigo()
