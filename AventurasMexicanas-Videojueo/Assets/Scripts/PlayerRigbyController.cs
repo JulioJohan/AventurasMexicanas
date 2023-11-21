@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerRigbyController : MonoBehaviour
 {
+    public LogicaBarraVidaPersonajePrincipal logicaBarraVidaPersonajePrincipal;
 
     public float velocidadMovimiento = 5.0f;
     public float velocidadRotacion = 200.0f;
@@ -26,6 +27,18 @@ public class PlayerRigbyController : MonoBehaviour
 
     private int tipoEspada;
 
+    //Vida del personaje
+    public float vidaPersonaje;
+
+    //Base de datos
+    private BaseDatos baseDatos;
+
+    //Variable para saber si sigue jugando.
+    private bool jugando;
+
+    //Canvas
+    public GameObject finDelJuegoCanvas;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +46,11 @@ public class PlayerRigbyController : MonoBehaviour
         puedoSaltar = false;
         playerAnim = gameObject.GetComponent<Animator>();
         tiempoInactivo = 0f;
+
+        vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
+        //Inicializando varible
+        jugando = true;
+
 
     }
 
@@ -106,8 +124,6 @@ public class PlayerRigbyController : MonoBehaviour
             playerAnim.SetTrigger("golpeo");
             atacando = true;
         }
-
-
     }
 
     public void estoyCayendo()
@@ -122,12 +138,44 @@ public class PlayerRigbyController : MonoBehaviour
         if (other.CompareTag("poder"))
         {
             print("recibiendo daño");
+            float danio = 10.0f;
+            logicaBarraVidaPersonajePrincipal.vidaActual -= danio;
+            vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
         }
         if (other.CompareTag("vida"))
         {
+            float vida = 30.0f;
+            logicaBarraVidaPersonajePrincipal.vidaActual += vida;
+            vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
+
             print("Sumando vida");
         }
+
+        if (vidaPersonaje <= 0)
+        {
+            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos);
+            jugando = false;
+            verificarJugando();
+            Destroy(other.gameObject);
+
+            finDelJuegoCanvas.SetActive(true);
+        }
     }
+
+    private void verificarJugando()
+    {
+        if (!jugando)
+        {
+            //musicaFondoFin.Play();
+            //musicaFondo.Stop();
+        }
+        if (jugando)
+        {
+
+            //musicaFondoFin.Stop();
+        }
+    }
+
 
     public void DejoAtacar()
     {
