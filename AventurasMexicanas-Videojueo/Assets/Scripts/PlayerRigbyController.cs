@@ -17,9 +17,14 @@ public class PlayerRigbyController : MonoBehaviour
     //Variable para la animacion de bailar.
     private float tiempoInactivo;
 
+    //Variable saber si esta atacando
+    private bool atacando;
+
 
     //Animación
     private int inactivo;
+
+    private int tipoEspada;
 
 
     // Start is called before the first frame update
@@ -33,9 +38,14 @@ public class PlayerRigbyController : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento);
-        //Ajustando la rotacion
-        transform.Rotate(0, x * Time.deltaTime * velocidadRotacion, 0);
+        if (!atacando)
+        {
+            transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento);
+            //Ajustando la rotacion
+            transform.Rotate(0, x * Time.deltaTime * velocidadRotacion, 0);
+    
+        }
+
     }
 
     // Update is called once per frame
@@ -51,7 +61,7 @@ public class PlayerRigbyController : MonoBehaviour
         if (x != 0 || y != 0)
         {
             //Generando animacion aleatoria.
-            inactivo = Random.Range(1, 4);
+            inactivo = Random.Range(1, 5);
             Debug.Log(inactivo + " generado");
 
             tiempoInactivo = 0f; // Restablecer el tiempo de inactividad
@@ -69,10 +79,13 @@ public class PlayerRigbyController : MonoBehaviour
 
         if (puedoSaltar)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (!atacando)
             {
-                playerAnim.SetBool("salte", true);
-                rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    playerAnim.SetBool("salte", true);
+                    rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+                }
             }
             playerAnim.SetBool("tocoSuelo", true);
 
@@ -80,6 +93,18 @@ public class PlayerRigbyController : MonoBehaviour
         else
         {
             estoyCayendo();
+        }
+
+        // Detectar el clic izquierdo del mouse
+        if (Input.GetMouseButtonDown(0) && puedoSaltar && !atacando)
+        {
+            //tiempoAtaque += Time.deltaTime; // Incrementar el tiempo de inactividad
+            tiempoInactivo = 0f; // Restablecer el tiempo de inactividad
+
+            // Seteando variables al animator
+            playerAnim.SetInteger("tipoEspada", tipoEspada);
+            playerAnim.SetTrigger("golpeo");
+            atacando = true;
         }
 
 
@@ -91,6 +116,7 @@ public class PlayerRigbyController : MonoBehaviour
         playerAnim.SetBool("salte", false);
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("poder"))
@@ -101,5 +127,17 @@ public class PlayerRigbyController : MonoBehaviour
         {
             print("Sumando vida");
         }
+    }
+
+    public void DejoAtacar()
+    {
+        atacando=false;
+
+    }
+
+    public void TomoEspada(int tipoEspadaT)
+    {
+        playerAnim.SetTrigger("tomoEspada");
+        tipoEspada = tipoEspadaT;
     }
 }
