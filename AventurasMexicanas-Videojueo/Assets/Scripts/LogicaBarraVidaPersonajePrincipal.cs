@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,22 +12,28 @@ public class LogicaBarraVidaPersonajePrincipal : MonoBehaviour
     public float vidaActual = 100;
     public Image imagenBarraVida;
     public Text textoVida;
+    public TextMeshProUGUI textoPuntos;
+    public int puntos = 0;
     void Start()
     {
-        vidaActual = vidaMax;   
+        vidaActual = vidaMax;
+        textoPuntos.text  = puntos.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+
         revisarVida();
-        if (vidaActual <= 0)
-        {  
-            //Destroy(gameObject);
-            //gameObject.SetActive(false);
-        }
-        
+        checarPuntos();
+
+
+    }
+
+    private void checarPuntos()
+    {
+        textoPuntos.text = puntos.ToString();
     }
 
     private void revisarVida()
