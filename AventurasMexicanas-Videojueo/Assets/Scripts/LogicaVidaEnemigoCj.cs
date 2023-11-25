@@ -31,14 +31,17 @@ public class LogicaVidaEnemigoCj : MonoBehaviour
     {
 
         revisarVida();
-        if (vidaActual <= 0)
-        {
-            logicaBarraVidaPersonajePrincipal.puntos += 30;
-            Destroy(gameObject);
+            
 
             //gameObject.SetActive(false);
-        }
 
+
+    }
+
+    public void destruirObjeto()
+    {
+        logicaBarraVidaPersonajePrincipal.puntos += 30;
+        Destroy(gameObject);
     }
 
     private void revisarVida()

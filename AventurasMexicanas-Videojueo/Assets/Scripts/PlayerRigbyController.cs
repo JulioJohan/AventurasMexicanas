@@ -19,7 +19,7 @@ public class PlayerRigbyController : MonoBehaviour
     private float tiempoInactivo;
 
     //Variable saber si esta atacando
-    private bool atacando;
+    public bool atacando;
 
 
     //Animación
@@ -141,6 +141,7 @@ public class PlayerRigbyController : MonoBehaviour
             float danio = 10.0f;
             logicaBarraVidaPersonajePrincipal.vidaActual -= danio;
             vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
+            Destroy(other.gameObject);
         }
         if (other.CompareTag("vida"))
         {

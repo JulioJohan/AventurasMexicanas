@@ -14,6 +14,9 @@ TagManager:
   - CJ
   - DestructorMundos
   - IconoPuntos
+  - espada
+  - espadaAzul
+  - krilin
   layers:
   - Default
   - TransparentFX
