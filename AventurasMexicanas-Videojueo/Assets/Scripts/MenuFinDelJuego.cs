@@ -32,9 +32,9 @@ public class MenuFinDelJuego : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void menuInicial(string nombre)
+    public void menuInicial()
     {
-        SceneManager.LoadScene(nombre);
+        SceneManager.LoadScene("Menu-v2");
     }
 
     public void salir()

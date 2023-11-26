@@ -39,6 +39,8 @@ public class PlayerRigbyController : MonoBehaviour
     //Canvas
     public GameObject finDelJuegoCanvas;
 
+    private string nombreJugador;
+
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +52,7 @@ public class PlayerRigbyController : MonoBehaviour
         vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
         //Inicializando varible
         jugando = true;
+        nombreJugador = PlayerPrefs.GetString("nombreJugador");
 
 
     }
@@ -153,7 +156,7 @@ public class PlayerRigbyController : MonoBehaviour
 
         if (vidaPersonaje <= 0)
         {
-            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos);
+            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos, nombreJugador);
             jugando = false;
             verificarJugando();
             Destroy(other.gameObject);

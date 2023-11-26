@@ -23,9 +23,9 @@ public class BaseDatos : MonoBehaviour
         
     }
 
-    public async void guardarPuntosBaseDatos(int puntos)
+    public async void guardarPuntosBaseDatos(int puntos,string nombreJugador)
     {
-        var documento = new BsonDocument { { "puntos", puntos } };
+        var documento = new BsonDocument { {"puntos", puntos },{ "nombreJugador", nombreJugador} };
         await coleccion.InsertOneAsync(documento);
     }
 }
