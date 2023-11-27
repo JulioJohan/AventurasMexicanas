@@ -201,7 +201,7 @@ public class PlayerRigbyController : MonoBehaviour
             print("Sumando vida");
         }
 
-        if (vidaPersonaje <= 0)
+        if (vidaPersonaje <= 0 && jugando)
         {
             jugando = false;
             verificarJugando();

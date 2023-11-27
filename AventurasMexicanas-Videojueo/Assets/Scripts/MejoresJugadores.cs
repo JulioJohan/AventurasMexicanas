@@ -35,7 +35,7 @@ public class MejoresJugadores : MonoBehaviour
         textoMejoresPuntuacion.text += "\n";
         textoMejoresNombres.text += "\n";
         mejoresJugadores.ForEach(data =>
-        {
+        {   
             //data["puntos"].AsInt64;    
             textoMejoresPuntuacion.text +=  data["puntos"].AsInt32.ToString() + "\n";
             textoMejoresNombres.text += data["nombreJugador"].AsString.ToString() + "\n";
