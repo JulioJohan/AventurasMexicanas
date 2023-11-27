@@ -23,7 +23,7 @@ public class PlayerRigbyController : MonoBehaviour
     public bool atacando;
 
 
-    //Animación
+    //Animaciï¿½n
     private int inactivo;
 
     private int tipoEspada;
@@ -48,6 +48,8 @@ public class PlayerRigbyController : MonoBehaviour
 
     public Button botonSalto; //  usando UnityEngine.UI;
     private bool botonSaltoPresionado = false;
+    private string nombreJugador;
+
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +61,7 @@ public class PlayerRigbyController : MonoBehaviour
         vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
         //Inicializando varible
         jugando = true;
+        nombreJugador = PlayerPrefs.GetString("nombreJugador");
 
         botonGolpeo.onClick.AddListener(() => botonGolpeoPresionado = true);
         botonSalto.onClick.AddListener(() => botonSaltoPresionado = true);
@@ -93,7 +96,7 @@ public class PlayerRigbyController : MonoBehaviour
         #endif
 
         //Aplicando animacion.
-        // Si el personaje está en movimiento
+        // Si el personaje estï¿½ en movimiento
         if (x != 0 || y != 0)
         {
             //Generando animacion aleatoria.
@@ -118,10 +121,10 @@ public class PlayerRigbyController : MonoBehaviour
             if (!atacando)
             {
                 #if UNITY_ANDROID || UNITY_IOS
-                                // Detectar si el botón de golpeo ha sido presionado
+                                // Detectar si el botï¿½n de golpeo ha sido presionado
                                 if (botonSaltoPresionado)
                                 {
-                                    botonSaltoPresionado = false; // Restablecer el estado del botón
+                                    botonSaltoPresionado = false; // Restablecer el estado del botï¿½n
 
                                     playerAnim.SetBool("salte", true);
                                     rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
@@ -144,10 +147,10 @@ public class PlayerRigbyController : MonoBehaviour
         }
 
         #if UNITY_ANDROID || UNITY_IOS
-                // Detectar si el botón de golpeo ha sido presionado
+                // Detectar si el botï¿½n de golpeo ha sido presionado
                 if (botonGolpeoPresionado && puedoSaltar && !atacando)
                 {
-                    botonGolpeoPresionado = false; // Restablecer el estado del botón
+                    botonGolpeoPresionado = false; // Restablecer el estado del botï¿½n
                     tiempoInactivo = 0f; // Restablecer el tiempo de inactividad
 
                     // Seteando variables al animator
@@ -182,7 +185,7 @@ public class PlayerRigbyController : MonoBehaviour
     {
         if (other.CompareTag("poder"))
         {
-            print("recibiendo daño");
+            print("recibiendo daï¿½o");
             float danio = 10.0f;
             logicaBarraVidaPersonajePrincipal.vidaActual -= danio;
             vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
@@ -204,7 +207,7 @@ public class PlayerRigbyController : MonoBehaviour
             Destroy(other.gameObject);
 
             finDelJuegoCanvas.SetActive(true);
-            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos);
+            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos, nombreJugador);
 
         }
     }

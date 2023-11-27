@@ -40,6 +40,9 @@ public class LogicaPersonajePrincipal : MonoBehaviour
     public GameObject musicaFondoFinGameObject;
     private AudioSource musicaFondoFin;
 
+    private string nombreJugador;
+    private bool puntosGuardados = false;
+
     // Start is called before the first frame update
 
 
@@ -56,6 +59,8 @@ public class LogicaPersonajePrincipal : MonoBehaviour
         vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;
         jugando = true;
         musicaFondo.Play();
+        nombreJugador = PlayerPrefs.GetString("nombreJugador");
+        print(nombreJugador);
     }
 
     // Update is called once per frame
@@ -104,13 +109,40 @@ public class LogicaPersonajePrincipal : MonoBehaviour
             logicaBarraVidaPersonajePrincipal.vidaActual -= danio;
             vidaPersonaje = logicaBarraVidaPersonajePrincipal.vidaActual;            
         }
-        if (vidaPersonaje <= 0)
+
+        finDelJuego();
+
+
+        if (other.CompareTag("PunosCJ") && !jugando)
         {
-            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos);
-            jugando = false;
-            verificarJugando();
+
+            Destroy(other.gameObject);                  
+        }
+
+        if (other.CompareTag("DestructorMundos") && !jugando)
+        {
             Destroy(other.gameObject);
 
+        }
+
+        checarVidaJugador();
+
+    }
+
+    private void finDelJuego()
+    {
+        if (vidaPersonaje <= 0)
+        {
+            jugando = false;
+        }
+    }
+    private void checarVidaJugador()
+    {
+        if (vidaPersonaje <= 0 && !puntosGuardados)
+        {           
+            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos, nombreJugador);
+            verificarJugando();
+            puntosGuardados = true;
             finDelJuegoCanvas.SetActive(true);
         }
     }
@@ -120,6 +152,7 @@ public class LogicaPersonajePrincipal : MonoBehaviour
         if (!jugando)
         {
             musicaFondoFin.Play();
+            sonidoEfectoDanio.Stop();
             musicaFondo.Stop();
         }
         if (jugando)
@@ -161,7 +194,7 @@ public class LogicaPersonajePrincipal : MonoBehaviour
         if (gameObject.transform.position.y <= -5)
         {
             finDelJuegoCanvas.SetActive(true);
-            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos);
+            baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos, nombreJugador);
             transform.position = new Vector3(0, 0, 0);
 
         }
