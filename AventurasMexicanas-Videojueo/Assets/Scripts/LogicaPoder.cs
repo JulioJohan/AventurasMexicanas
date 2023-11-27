@@ -14,6 +14,9 @@ public class LogicaPoder : MonoBehaviour
     {
         poder = GetComponent<Rigidbody>();
         jugador = GameObject.Find("Player");
+
+        // Destruye el objeto después de 3 segundos
+        Destroy(gameObject, 4);
     }
 
     // Update is called once per frame

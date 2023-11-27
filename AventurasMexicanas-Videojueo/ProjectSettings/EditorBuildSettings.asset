@@ -9,17 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: a9b6b3d9e982e594fbb4cd01d072ca16
   - enabled: 1
+    path: Assets/Scenes/NombreJugador.unity
+    guid: 9cbdc55950950ff47a06c0cbc9ccc0f6
+  - enabled: 1
     path: Assets/Scenes/Menu-v2.unity
     guid: 8df837b27d2e9d14ba27ca6852ff4773
+  - enabled: 1
+    path: Assets/Scenes/MejoresJugadores.unity
+    guid: 7b1b77879bb07744a8afc634f1249fdf
   - enabled: 1
     path: Assets/Scenes/UTNG.unity
     guid: 4f413563e2b1c184f8ee0834ee8e26f4
   - enabled: 0
     path: Assets/Scenes/Nivel2.unity
     guid: e2a32b3db424fac4dad214323d39270d
-  - enabled: 1
-    path: Assets/Scenes/NombreJugador.unity
-    guid: 9cbdc55950950ff47a06c0cbc9ccc0f6
   - enabled: 1
     path: Assets/Scenes/FinDelJuego.unity
     guid: 584bf43dac952a74faafaf02ba509fdd
