@@ -50,6 +50,7 @@ public class PlayerRigbyController : MonoBehaviour
     private bool botonSaltoPresionado = false;
     private string nombreJugador;
 
+    public AudioSource musicaFondo;
 
     // Start is called before the first frame update
     void Start()
@@ -205,6 +206,8 @@ public class PlayerRigbyController : MonoBehaviour
             jugando = false;
             verificarJugando();
             Destroy(other.gameObject);
+
+            musicaFondo.Stop();
 
             finDelJuegoCanvas.SetActive(true);
             baseDatos.guardarPuntosBaseDatos(logicaBarraVidaPersonajePrincipal.puntos, nombreJugador);
