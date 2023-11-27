@@ -82,6 +82,7 @@
     <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
     <Compile Include="Assets\Scripts\MenuOpciones.cs" />
     <Compile Include="Assets\Scripts\LogicaTomarArma.cs" />
+    <Compile Include="Assets\Scripts\BotonesMenu.cs" />
     <Compile Include="Assets\Scripts\GeneraPasto.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabModelWindow.cs" />
+    <Compile Include="Assets\Scripts\MejoresJugadores.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\Armas\SincronizarEspada.cs" />
     <Compile Include="Assets\Scripts\Armas\TomarArma.cs" />
