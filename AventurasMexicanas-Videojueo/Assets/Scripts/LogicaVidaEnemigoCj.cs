@@ -31,7 +31,11 @@ public class LogicaVidaEnemigoCj : MonoBehaviour
     {
 
         revisarVida();
-            
+
+        if (vidaActual <= 0)
+        {
+            destruirObjeto();
+        }
 
             //gameObject.SetActive(false);
 

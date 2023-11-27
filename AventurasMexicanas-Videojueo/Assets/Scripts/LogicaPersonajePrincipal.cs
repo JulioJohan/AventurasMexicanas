@@ -1,7 +1,8 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LogicaPersonajePrincipal : MonoBehaviour
 {
@@ -45,13 +46,18 @@ public class LogicaPersonajePrincipal : MonoBehaviour
 
     // Start is called before the first frame update
 
+    //Joystic
+    public Joystick joystick;
+
+    public Button botonGolpeo; //  usando UnityEngine.UI;
+    private bool botonGolpeoPresionado = false;
 
     void Start()
     {
 
         baseDatos = GameObject.FindObjectOfType<BaseDatos>();
         rigidbody = GetComponent<Rigidbody>();
-        // Establece isKinematic en true para evitar la influencia de la f�sica externa
+        // Establece isKinematic en true para evitar la influencia de la física externa
         sonidoEfectoDanio = efectoDanio.GetComponent<AudioSource>();
         musicaFondo =  musicaFondoGameObject.GetComponent<AudioSource>();
         musicaFondoFin = musicaFondoFinGameObject.GetComponent<AudioSource>();
@@ -61,6 +67,9 @@ public class LogicaPersonajePrincipal : MonoBehaviour
         musicaFondo.Play();
         nombreJugador = PlayerPrefs.GetString("nombreJugador");
         print(nombreJugador);
+
+        botonGolpeo.onClick.AddListener(() => botonGolpeoPresionado = true);
+
     }
 
     // Update is called once per frame
@@ -81,11 +90,20 @@ public class LogicaPersonajePrincipal : MonoBehaviour
             rigidbody.velocity = transform.forward * impulsoDeGolpe;
         }
 
-        if(Input.GetMouseButtonDown(0))
+#if UNITY_ANDROID || UNITY_IOS
+        if (botonGolpeoPresionado)
         {
+            botonGolpeoPresionado = false; // Restablecer el estado del bot�n
             animator.SetTrigger("golpe");
             atacando = true;
         }
+#else
+                if (Input.GetMouseButtonDown(0))
+                {
+                    animator.SetTrigger("golpe");
+                    atacando = true;
+                }
+#endif
     }
 
     public void OnTriggerEnter(Collider other)
@@ -164,8 +182,14 @@ public class LogicaPersonajePrincipal : MonoBehaviour
 
     private void movimientoPersonaje()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+
+        #if UNITY_ANDROID || UNITY_IOS
+                    horizontal = joystick.Horizontal * 1.2f;
+                    vertical = joystick.Vertical * 1.2f;
+        #else
+                    horizontal = Input.GetAxis("Horizontal");
+                    vertical = Input.GetAxis("Vertical");
+        #endif
         transform.Rotate(0, horizontal * Time.deltaTime * velocidadRotacion, 0);
         transform.Translate(0, 0, vertical * Time.deltaTime * velocidadMovimiento);
         animator.SetFloat("velocidadHorizontal", horizontal);
