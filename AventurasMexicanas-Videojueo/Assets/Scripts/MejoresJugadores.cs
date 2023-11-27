@@ -33,7 +33,7 @@ public class MejoresJugadores : MonoBehaviour
 
         var mejoresJugadores = coleccion.Find(new BsonDocument()).Sort(Builders<BsonDocument>.Sort.Descending("puntos")).Limit(5).ToList();
         textoMejoresPuntuacion.text += "\n";
-        textoMejoresNombres.text += "\n";
+        //textoMejoresNombres.text += "\n";
         mejoresJugadores.ForEach(data =>
         {   
             //data["puntos"].AsInt64;    
