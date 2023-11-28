@@ -48,3 +48,7 @@ Default de la serie
 - Código fuente y readme [Practica 5](https://github.com/JulioJohan/AventurasMexicanas/tree/main/Lecci%C3%B3n%205%20User%20Interface)
 - Desafio [Video](https://drive.google.com/file/d/1P94ZAQyizSTLHFwRmFbRz9c1QrNRrKsq/view?usp=sharing)
 
+## Releases Videojuego
+- APK [Aquí](https://github.com/JulioJohan/AventurasMexicanas/releases/tag/APK)
+- PC [Aquí](https://github.com/JulioJohan/AventurasMexicanas/releases/tag/PC)
+- WEB [Aquí](https://github.com/JulioJohan/AventurasMexicanas/releases/tag/Web)
